@@ -65,12 +65,12 @@ flex-direction: column;
 }
 
 #intro1 {
-  outline: 3px solid rgb(255, 221, 71);
-  width: 100%;
-  height: 100vh;
-  background:  #eff5f5 center top no-repeat;
-  background-size: cover;
-  position: relative;
+    /*outline: 3px solid rgb(255, 221, 71);*/
+    width: 100%;
+    height: 100vh;
+    background: #eff5f5 center top no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 
@@ -607,7 +607,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #111;
   text-align: center;
   font-weight: 400;
-  outline: 3px solid tomato;
+  /*outline: 3px solid tomato; */
 }
 
 .section-header .section-description {

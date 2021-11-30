@@ -1,0 +1,17 @@
+# This is script for https://cloud.google.com/cloud-build/
+steps:
+  # Install
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["install"]
+  # Lint
+  # - name: "gcr.io/cloud-builders/npm"
+  #   args: ["run", "lint"]
+  # Test
+  # - name: "gcr.io/cloud-builders/npm"
+  #   args: ["run", "unittest"]
+  # Build
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["run", "build"]
+  # Deploy
+  - name: gcr.io/cloud-builders/gsutil
+    args: ["-m", "rsync", "-r", "-c", "-d", "build", "gs://kevinsyu.tw"]

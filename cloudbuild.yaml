@@ -14,4 +14,4 @@ steps:
     args: ["run", "build"]
   # Deploy
   - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", "build", "gs://kevinsyu.tw"]
+    args: ["-m", "rsync", "-r", "-c", "-d", "build", "kevinsyu.tw"]
